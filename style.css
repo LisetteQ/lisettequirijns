@@ -32,10 +32,13 @@ body {
 }
 
 .banner {
-  background-size: cover;
-  background-position: center;
-  background-color: #6B747B;
-  min-height: 80vh;
+  background-color: #F2F2F2;
+  min-height: 60vh;
+}
+
+.banner h2{
+  text-align: center;
+  color: #6B747B
 }
 
 /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
