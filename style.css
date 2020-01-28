@@ -36,9 +36,14 @@ body {
   color: white;
 }
 
+.bg-blue{
+  background-color: #577399;
+}
+
 .banner {
-  background-color: #F2F2F2;
-  min-height: 60vh;
+  background-color: #577399;
+  color: #F2F2F2;
+  min-height: 75vh;
 }
 
 .banner h2{
@@ -46,13 +51,6 @@ body {
   color: #6B747B
 }
 
-.skewed-bg{
-  background: $main-color;
-  padding: 200px 0;
-  @include transform(skew(0deg, -10deg));
-  margin-top: -200px;
-
-}
 
 
 /* header & footer */
@@ -116,6 +114,7 @@ a:focus {
 
 .portfolioFilter {
   padding: 15px 0;
+  font-size: 400;
 }
 
 .portfolioFilter a {
@@ -137,6 +136,7 @@ a:focus {
 img {
   margin: 5px;
   max-width:100%;
+
 }
 
 .isotope-item {
@@ -256,7 +256,7 @@ img {
 }
 /* Media Queries */
 
-@media(max-width:1300px) {
+@media(max-width:1400px) {
 
     /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
     #body .mobile-hide {
