@@ -11,6 +11,7 @@ h1 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #6b747c;
   background-color: #F7F7F7;
 }
 
@@ -28,6 +29,18 @@ body {
 .bg-dark {
   background-color: #A9BDBA;
   color: white;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-color: #6B747B;
+  min-height: 80vh;
+}
+
+/* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
+.reverse-on-mobile {
+  flex-direction: column-reverse;
 }
 
 /* header & footer */
@@ -48,7 +61,7 @@ header a:hover {
 }
 header h1 {
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 footer a {
@@ -66,6 +79,21 @@ footer a:hover {
 footer .fab {
   font-size: 2rem;
 }
+
+/* overlaying images */
+.fishes
+{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.fish
+{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
 
 /* stuff for portfolioFilter*/
 a:focus {
