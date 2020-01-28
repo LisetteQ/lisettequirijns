@@ -27,7 +27,10 @@ body {
 .center { text-align: center; }
 
 .padded     { padding: 5%;  }
+.padded2    { padding: 1.5rem;  }
 .no-padding { padding: 0;   }
+
+.margin { margin: 1rem; }
 
 .bg-light { background-color: rgb(230,230,235); }
 
@@ -41,16 +44,30 @@ body {
 }
 
 .banner {
-  background-color: #577399;
+  min-height: 50vh;
   color: #F2F2F2;
-  min-height: 75vh;
 }
 
-.banner h2{
+.banner h3{
   text-align: center;
-  color: #6B747B
+  color: #a9bdba;
+  font-weight: bold;
+  font-size: 50px;
 }
 
+.imagesmall{
+  width: 50%;
+}
+
+.half-color {
+  background: linear-gradient(
+    to bottom,
+    #F7F7F7 21%,
+    #F7F7F7 5%,
+    #577399 0%,
+    #577399 100%
+  );
+}
 
 
 /* header & footer */
@@ -89,7 +106,7 @@ footer a:hover {
 }
 
 footer .fab {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 /* overlaying images */
@@ -272,6 +289,11 @@ img {
       padding-bottom: 50%;
     }
 
+    h1 {
+      font-size: 5rem;
+      font-weight: 400;
+      margin-top: 2rem;
+    }
 
     h2 {
       font-size: 5rem;
@@ -281,13 +303,14 @@ img {
 
     h3 {
       font-size: 2rem;
-      ont-weight: 300;
+      font-weight: 300;
     }
 
     p {
       font-size: 2.5rem;
       line-height: 2.8rem;
       font-weight: 300;
+      padding: 2rem;
     }
 
     .mobile-hide {
@@ -298,11 +321,20 @@ img {
       text-align: center;
     }
     header a{
-      font-size: 2.5rem;
+      font-size: 5rem;
     }
 
     header h1 {
-      font-size: 5rem;
+      font-size: 10rem;
+    }
+
+    footer{
+        min-height: 40vh;
+        font-size: 5rem;
+    }
+
+    footer h1{
+      font-size: 10rem;
     }
 
     h1  {
@@ -314,6 +346,6 @@ img {
       image-resolution: 50%;
     }
     .portfolioFilter {
-      font-size: 1.9rem;
+      font-size: 2.5rem;
     }
 }
