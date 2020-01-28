@@ -52,22 +52,6 @@ body {
   @include transform(skew(0deg, -10deg));
   margin-top: -200px;
 
-  .content{
-    @include transform(skew(0deg, 10deg));
-    text-align: center;
-
-    .title{
-      padding-top: 100px;
-      font-weight: normal;
-    }
-
-    .text{
-      width:60%;
-      margin: 25px auto;
-      color: lighten($main-color, 55);
-    }
-
-  }
 }
 
 
