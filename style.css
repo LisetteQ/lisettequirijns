@@ -46,10 +46,30 @@ body {
   color: #6B747B
 }
 
-/* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
-.reverse-on-mobile {
-  flex-direction: column-reverse;
+.skewed-bg{
+  background: $main-color;
+  padding: 200px 0;
+  @include transform(skew(0deg, -10deg));
+  margin-top: -200px;
+
+  .content{
+    @include transform(skew(0deg, 10deg));
+    text-align: center;
+
+    .title{
+      padding-top: 100px;
+      font-weight: normal;
+    }
+
+    .text{
+      width:60%;
+      margin: 25px auto;
+      color: lighten($main-color, 55);
+    }
+
+  }
 }
+
 
 /* header & footer */
 header {
@@ -68,6 +88,7 @@ header a:hover {
   color: rgb(120,120,125);
   text-decoration: none;
 }
+
 header h1 {
   text-transform: uppercase;
   font-weight: 300;
@@ -248,3 +269,67 @@ img {
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+/* Media Queries */
+
+@media(max-width:768px) {
+
+    /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
+    #body .mobile-hide {
+      display: none;
+    }
+
+    /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
+    .reverse-on-mobile {
+      flex-direction: column-reverse;
+    }
+
+    .bg-image {
+      padding-bottom: 50%;
+    }
+
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 400;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      ont-weight: 300;
+    }
+
+    p {
+      font-size: 2.5rem;
+      line-height: 2.8rem;
+      font-weight: 300;
+    }
+
+    .mobile-hide {
+      display: none;
+    }
+
+    header {
+      text-align: center;
+    }
+    header a{
+      font-size: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 5rem;
+    }
+
+    h1  {
+      padding: 2rem;
+    }
+    .right  { text-align: center;;  }
+
+    .mobile-small{
+      image-resolution: 50%;
+    }
+    .portfolioFilter {
+      font-size: 1.9rem;
+    }
+}
