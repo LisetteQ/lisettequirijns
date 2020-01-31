@@ -96,7 +96,7 @@ body {
 .half-color {
   background-color: #FFF;
   margin-right: 50%;
-padding: 2%;
+  padding: 2% 5%;
 }
 
 .bgwebsites{
@@ -181,8 +181,15 @@ footer .fab {
 .fish
 {
   position: absolute;
-  top: 60px;
-  left: 80px;
+  top: 40px;
+  left: 60px;
+}
+
+.fish2
+{
+  position: absolute;
+  top: 40px;
+  left: -60px;
 }
 
 
