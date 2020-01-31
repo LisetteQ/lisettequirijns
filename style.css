@@ -17,6 +17,12 @@ h1 h2 h3{
   font-family: 'Ubuntu', sans-serif;
 }
 
+a{
+  color: inherit;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   color: #6b747c;
@@ -42,7 +48,7 @@ body {
 .bg-light { background-color: #FFF; }
 
 .bg-dark {
-  background-color: #C4932C;
+  background-color: #a9bdba;
   color: white;
 }
 
@@ -67,7 +73,7 @@ body {
   width: 50%;
 }
 
-.half-color {
+.half-color-vertical {
   background: linear-gradient(
     to bottom,
     #F7F7F7 21%,
@@ -77,11 +83,50 @@ body {
   );
 }
 
+.half-color-horizontal {
+  background: linear-gradient(
+    to right,
+    #F7F7F7 0%,
+    #F7F7F7 70%,
+    #a9bdba 00%,
+    #a9bdba 100%
+  );
+}
+
+.half-color {
+  background-color: #FFF;
+  margin-right: 50%;
+padding: 2%;
+}
+
+.bgwebsites{
+  background-size: 60%;
+  background-position: right;
+  background-image: url('images/ny.jpg');
+  background-repeat: no-repeat;
+  margin-right: 10%;
+}
+
+.bgphotos{
+  background-size: 60%;
+  background-position: right;
+  background-image: url('images/jordan.jpg');
+  background-repeat: no-repeat;
+  margin-right: 10%;
+}
+
+.bgvideos{
+  background-size: 60%;
+  background-position: right;
+  background-image: url('images/norway.jpg');
+  background-repeat: no-repeat;
+  margin-right: 10%;
+}
 
 
 /* header & footer */
 header {
-  padding: 0% 5%;
+  padding: 1% 5%;
 }
 
 header a {
@@ -89,7 +134,7 @@ header a {
     color: inherit;
     padding: 0.5rem;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: lighter;
     word-spacing: 20px;
 }
@@ -136,8 +181,8 @@ footer .fab {
 .fish
 {
   position: absolute;
-  top: 40px;
-  left: 60px;
+  top: 60px;
+  left: 80px;
 }
 
 
@@ -166,12 +211,10 @@ a:focus {
 .portfolioContainer{
   border: 1px solid #F7F7F7;
   border-radius: 3px;
-  width: 100%;
 }
 img {
-  margin: 5px;
+  margin: 0px;
   max-width:100%;
-
 }
 
 .isotope-item {
@@ -294,7 +337,7 @@ img {
 }
 /* Media Queries */
 
-@media(max-width:1400px) {
+@media(max-width:768px) {
 
     /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
     #body .mobile-hide {
@@ -313,7 +356,7 @@ img {
     h1 {
       font-size: 5rem;
       font-weight: 400;
-      margin-top: 2rem;
+      margin-top: 0rem;
     }
 
     h2 {
