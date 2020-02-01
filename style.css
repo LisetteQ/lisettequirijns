@@ -17,7 +17,7 @@ h1 h2 h3{
   font-family: 'Ubuntu', sans-serif;
 }
 
-a{
+a {
   color: inherit;
   font-size: 1.8rem;
   text-align: center;
@@ -357,7 +357,7 @@ img {
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: 400;
       padding: 0.2rem 2.5rem;
     }
@@ -374,7 +374,7 @@ img {
     }
 
     p {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 3rem;
       font-weight: 300;
       padding: 0.2rem 2.5rem;
@@ -410,6 +410,20 @@ img {
       display: none;
     }
     .mobileShow {display: inline;}
+
+    .half-color {
+      margin-right: 0%;
+    }
+
+    .bgwebsites{
+      background-image: none;
+    }
+    .bgphotos{
+      background-image: none;
+    }
+    .bgvideos{
+      background-image: none;
+    }
 }
 
 
