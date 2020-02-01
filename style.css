@@ -26,7 +26,7 @@ a{
 body {
   font-family: 'Work Sans', sans-serif;
   color: #6b747c;
-  background-color: #F7F7F7;
+  background-color: #a9bdba;
 }
 
 /* Utility Classes */
@@ -45,7 +45,8 @@ body {
 
 .margin { margin: 1rem; }
 
-.bg-light { background-color: #FFF; }
+.bg-light { background-color: #F7F7F7; }
+.bg-white { background-color: #FFF}
 
 .bg-dark {
   background-color: #a9bdba;
@@ -341,6 +342,7 @@ img {
   transform: translate3d(0,0,0);
 }
 /* Media Queries */
+.mobileShow {display: none;}
 
 @media(max-width:768px) {
 
@@ -404,7 +406,14 @@ img {
     .padded2 {
       padding: 0.5rem;
     }
+    .mobile-hide {
+      display: none;
+    }
+    .mobileShow {display: inline;}
 }
+
+
+
 
 /* image bigger on click */
 /* The grid: Four equal columns that floats next to each other */
@@ -473,10 +482,9 @@ img {
 }
 
 .parallax-background-container {
-    height: 100vh;
+    height: 70vh;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .section-bg {
@@ -485,8 +493,7 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background-position: center center;
-    background-size: cover;
+    background-position: 18% 45%;
     background-repeat: no-repeat;
     z-index: -1;
 }
