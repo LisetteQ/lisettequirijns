@@ -149,17 +149,12 @@ header h1 {
   letter-spacing: 10px:
 }
 
-footer h1 {
-  font-size: 50px;
-}
-
 footer a {
     text-decoration: none;
     color: inherit;
     padding: 1rem;
     font-weight: regular;
     display: inline-block;
-
 }
 
 footer a:hover {
@@ -167,8 +162,11 @@ footer a:hover {
 }
 
 footer .fab {
-  font-size: 4rem;
+  font-size: 2rem;
+}
 
+footer p{
+  font-size: 1.5rem;
 }
 
 /* overlaying images */
