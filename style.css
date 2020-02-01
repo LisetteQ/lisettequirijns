@@ -355,8 +355,9 @@ img {
     }
 
     h1 {
-      font-size: 20rem;
+      font-size: 3.5rem;
       font-weight: 400;
+      padding: 0.2rem 2.5rem;
     }
 
     h2 {
@@ -371,24 +372,24 @@ img {
     }
 
     p {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
       font-weight: 300;
-      padding: 2.5rem;
+      padding: 0.2rem 2.5rem;
     }
 
     header {
       text-align: center;
     }
     header a{
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     header h1 {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
-    footer{
+    footer {
         min-height: 5vh;
         font-size: 5rem;
     }
