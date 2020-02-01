@@ -54,62 +54,76 @@
           </div>
         </header>
 
-    <!-- portfolio -->
-    <section class="center bg-light padded2">
-        <h1>Photos</h1>
-      </section>
-    <section class="center bg-light padded2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-          <div class="portfolioFilter clearfix">
-            <a href="#" data-filter="*" class="current">All Categories</a>
-            <a href="#" data-filter=".travel">Travel</a>
-            <a href="#" data-filter=".companies">Companies</a>
+        <!-- Soweto Youth initiative -->
+        <!-- <section class="grid-center">
+          <div class="col-8">
+            <h1>Soweto Youth Initiative</h1>
           </div>
-            </div>
-          <div class="portfolioContainer">
-
-            <div class="col-lg-4 col-md-6 col-sm-6 travel">
-              <div class="hovereffect">
-                <img class="img-responsive image" src="images/photos/syi2-2.jpg" alt="image">
-                <div class="overlay">
-                  <h2>Soweto Youth Initiative</h2>
-                    <p>
-                    <a href="syi.html">See Photos</a>
-                    </p>
-                </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="column">
+                <img src="images/photos/syi2.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi1.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi3.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi4.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi5.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi6.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi7.jpg" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="images/photos/syi8.jpg" onclick="myFunction(this);">
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 travel">
-              <div class="hovereffect">
-                <img class="img-responsive image" src="images/websites/dmvot.jpg" alt="image">
-                <div class="overlay">
-                  <h2>De meiden van ons Toos</h2>
-                    <p>
-                    <a href="https://www.demeidenvanonstoos.nl">See Website</a>
-                    </p>
-                </div>
-              </div>
+            <!-- The expanding image container -->
+            <div class="containercollage">
+              <!-- Close the image -->
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              <!-- Expanded image -->
+              <img id="expandedImg" style="width:100%">
+              <!-- Image text -->
+              <div id="imgtext"></div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 travel">
-              <div class="hovereffect">
-                <img class="img-responsive image" src="images/photos/jordan.jpg" alt="image">
-                <div class="overlay">
-                  <h2>Jordan</h2>
-                    <p>
-                    <a href="#">See Photos</a>
-                    </p>
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-      </div>
-      </section>
+        </section>
+
+        <!-- parallax -->
+
+        <section class="parallax-background-container">
+          <div class="section-bg parallax-object" style="background-image: url('images/bg1.jpg');" data-breakpoint="768" data-speed="0.5"></div>
+          <div class="grid-center-middle">
+            <div class="col-12">
+              <br>
+              <br>
+            </div>
+            <div class="col-6">
+            <h1 class="center padded white"> test </h1>
+            </div>
+            <div class="col-4">
+            <img src="images/photos/syi2.jpg">
+            </div>
+         </div>
+        </section>
+        <section class="parallax-background-container">
+          <div class="module-image section-bg parallax-object" style="background-image: url('images/photos/jordan.jpg');" data-breakpoint="768" data-speed="0.5"></div>
+        </section>
+        <section class="parallax-background-container">
+          <div class="module-image section-bg parallax-object" style="background-image: url('images/photos/norway.jpg');" data-breakpoint="768" data-speed="0.5"></div>
+        </section>
+        <section class="parallax-background-container">
+          <div class="module-image section-bg parallax-object" style="background-image: url('http://www.unsplash.it/1000/600');" data-breakpoint="768" data-speed="0.5"></div>
+        </section>
 
       <!-- Footer -->
       <footer class="padded2 center bg-dark grid-center-middle">
@@ -132,6 +146,7 @@
       </footer>
 
 <!-- js links, always put your own last! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
 <script src="scripts.js"></script>

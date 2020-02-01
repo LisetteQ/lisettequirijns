@@ -102,7 +102,7 @@ body {
 .bgwebsites{
   background-size: 60%;
   background-position: right;
-  background-image: url('images/ny.jpg');
+  background-image: url('images/websites/dmvot.jpg');
   background-repeat: no-repeat;
   margin-right: 10%;
 }
@@ -110,7 +110,7 @@ body {
 .bgphotos{
   background-size: 60%;
   background-position: right;
-  background-image: url('images/jordan.jpg');
+  background-image: url('images/photos/jordan.jpg');
   background-repeat: no-repeat;
   margin-right: 10%;
 }
@@ -118,7 +118,7 @@ body {
 .bgvideos{
   background-size: 60%;
   background-position: right;
-  background-image: url('images/norway.jpg');
+  background-image: url('images/videos/stijn.jpg');
   background-repeat: no-repeat;
   margin-right: 10%;
 }
@@ -404,4 +404,93 @@ img {
     .padded2 {
       padding: 0.5rem;
     }
+}
+
+/* image bigger on click */
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containercollage {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* parallax */
+.main {
+  background: url("images/photos/ny.jpg") no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  color: #ecf0f1;
+  padding: 30px 60px;
+  background: rgba(44, 62, 80, 0.6);
+}
+
+.parallax-background-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.section-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.white{
+  font-size: 10rem;
 }
