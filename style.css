@@ -342,7 +342,7 @@ img {
 }
 /* Media Queries */
 
-@media(max-width:1400px) {
+@media(max-width:768px) {
 
     /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
     #body .mobile-hide {
@@ -410,5 +410,9 @@ img {
 
     .portfolioFilter {
       font-size: 2.5rem;
+    }
+
+    .padded2 {
+      padding: 0.5rem;
     }
 }
