@@ -5,15 +5,15 @@
   box-sizing: border-box;
 }
 
-p{
-    margin-bottom: 1rem;
-    line-height: 2.8rem;
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-top: 2rem;
+p {
+  margin-bottom: 1rem;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 2rem;
 }
 
-h1 h2 h3{
+h1 h2 h3 {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -23,6 +23,11 @@ a {
   text-align: center;
 }
 
+a:hover {
+  color: #CFCFCD;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   color: #6b747c;
@@ -30,30 +35,57 @@ body {
 }
 
 /* Utility Classes */
+.left {
+  text-align: left;
+}
 
-.left   { text-align: left;   }
-.right  { text-align: right;  }
-.center { text-align: center; }
+.right {
+  text-align: right;
+}
 
-.padded     { padding: 5%;  }
-.padded2    { padding: 1.5rem;  }
-.no-padding { padding: 0;   }
-.spaced{
+.center {
+  text-align: center;
+}
+
+.padded {
+  padding: 5%;
+}
+
+.padded2 {
+  padding: 1.5rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.spaced {
   word-spacing: 30px;
   letter-spacing: 20px:
 }
 
-.margin { margin: 1rem; }
+.margin {
+  margin: 1rem;
+}
 
-.bg-light { background-color: #F7F7F7; }
-.bg-white { background-color: #FFF}
+.bg-light {
+  background-color: #F7F7F7;
+}
+
+.bg-white {
+  background-color: #FFF
+}
 
 .bg-dark {
   background-color: #a9bdba;
   color: white;
 }
 
-.bg-blue{
+.bg-blue {
   background-color: #577399;
 }
 
@@ -63,35 +95,31 @@ body {
   margin-bottom: 3.5rem;
 }
 
-.banner h3{
+.banner h3 {
   text-align: center;
   color: #6b747c;
   font-weight: bold;
   font-size: 50px;
 }
 
-.imagesmall{
+.imagesmall {
   width: 50%;
 }
 
 .half-color-vertical {
-  background: linear-gradient(
-    to bottom,
-    #F7F7F7 21%,
-    #F7F7F7 5%,
-    #CFCFCD 0%,
-    #CFCFCD 100%
-  );
+  background: linear-gradient(to bottom,
+      #F7F7F7 80%,
+      #F7F7F7 0%,
+      #a9bdba 0%,
+      #a9bdba 100%);
 }
 
 .half-color-horizontal {
-  background: linear-gradient(
-    to right,
-    #F7F7F7 0%,
-    #F7F7F7 70%,
-    #a9bdba 00%,
-    #a9bdba 100%
-  );
+  background: linear-gradient(to right,
+      #F7F7F7 0%,
+      #F7F7F7 70%,
+      #a9bdba 00%,
+      #a9bdba 100%);
 }
 
 .half-color {
@@ -100,15 +128,15 @@ body {
   padding: 2% 5%;
 }
 
-.bgwebsites{
+.bgwebsites {
   background-size: 60%;
-  background-position: right;
+  background-position: right 20%;
   background-image: url('images/websites/dmvot.jpg');
   background-repeat: no-repeat;
   margin-right: 10%;
 }
 
-.bgphotos{
+.bgphotos {
   background-size: 60%;
   background-position: right;
   background-image: url('images/photos/jordan.jpg');
@@ -116,7 +144,7 @@ body {
   margin-right: 10%;
 }
 
-.bgvideos{
+.bgvideos {
   background-size: 60%;
   background-position: right;
   background-image: url('images/videos/stijn.jpg');
@@ -124,21 +152,21 @@ body {
   margin-right: 10%;
 }
 
-
 /* header & footer */
 header {
   padding: 1% 5%;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    font-weight: lighter;
-    word-spacing: 20px;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  word-spacing: 20px;
 }
+
 header a:hover {
   color: #CFCFCD;
   text-decoration: none;
@@ -151,11 +179,11 @@ header h1 {
 }
 
 footer a {
-    text-decoration: none;
-    color: inherit;
-    padding: 1rem;
-    font-weight: regular;
-    display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  font-weight: regular;
+  display: inline-block;
 }
 
 footer a:hover {
@@ -166,31 +194,28 @@ footer .fab {
   font-size: 2rem;
 }
 
-footer p{
+footer p {
   font-size: 1.5rem;
 }
 
 /* overlaying images */
-.fishes
-{
+.fishes {
   position: relative;
   top: 0;
   left: 0;
 }
-.fish
-{
+
+.fish {
   position: absolute;
   top: 40px;
   left: 60px;
 }
 
-.fish2
-{
+.fish2 {
   position: absolute;
   top: 40px;
   left: -60px;
 }
-
 
 /* stuff for portfolioFilter*/
 a:focus {
@@ -214,13 +239,15 @@ a:focus {
   border-bottom: 2px solid #6b747c;
   color: #6b747c;
 }
-.portfolioContainer{
+
+.portfolioContainer {
   border: 1px solid #F7F7F7;
   border-radius: 3px;
 }
+
 img {
   margin: 0px;
-  max-width:100%;
+  max-width: 100%;
 }
 
 .isotope-item {
@@ -282,8 +309,8 @@ img {
   width: calc(100% + 10px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -301,7 +328,8 @@ img {
   font-size: 30px;
   font-weight: bold;
   overflow: hidden;
-  padding: 5px;;
+  padding: 5px;
+  ;
   background-color: transparent;
 }
 
@@ -315,13 +343,13 @@ img {
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 .hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .hovereffect a, .hovereffect p {
@@ -331,103 +359,115 @@ img {
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
 
 .hovereffect:hover a, .hovereffect:hover p {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
 /* Media Queries */
-.mobileShow {display: none;}
+.mobileShow {
+  display: none;
+}
 
 @media(max-width:768px) {
 
-    /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
-    #body .mobile-hide {
-      display: none;
-    }
+  /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
+  #body .mobile-hide {
+    display: none;
+  }
 
-    /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
-    .reverse-on-mobile {
-      flex-direction: column-reverse;
-    }
+  /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
+  .reverse-on-mobile {
+    flex-direction: column-reverse;
+  }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      padding: 0.2rem 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 0.2rem 2.5rem;
+  }
 
-    h2 {
-      font-size: 5rem;
-      font-weight: 400;
-      margin-top: 2rem;
-    }
+  h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
 
-    h3 {
-      font-size: 2rem;
-      font-weight: 300;
-    }
+  h3 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
 
-    p {
-      font-size: 2rem;
-      line-height: 3rem;
-      font-weight: 300;
-      padding: 0.2rem 2.5rem;
-    }
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    padding: 0.2rem 2.5rem;
+  }
 
-    header {
-      text-align: center;
-    }
-    header a{
-      font-size: 2rem;
-    }
+  header {
+    text-align: center;
+  }
 
-    header h1 {
-      font-size: 4.5rem;
-    }
+  header a {
+    font-size: 2rem;
+  }
 
-    footer {
-        min-height: 5vh;
-        font-size: 5rem;
-    }
+  header h1 {
+    font-size: 4.5rem;
+  }
 
-    .right  { text-align: center;  }
-    .left  { text-align: center;  }
+  footer {
+    min-height: 5vh;
+    font-size: 5rem;
+  }
 
-    .portfolioFilter {
-      font-size: 2.5rem;
-    }
+  .right {
+    text-align: center;
+  }
 
-    .padded2 {
-      padding: 0.5rem;
-    }
-    .mobile-hide {
-      display: none;
-    }
-    .mobileShow {display: inline;}
+  .left {
+    text-align: center;
+  }
 
-    .half-color {
-      margin-right: 0%;
-    }
+  .portfolioFilter {
+    font-size: 2.5rem;
+  }
 
-    .bgwebsites{
-      background-image: none;
-    }
-    .bgphotos{
-      background-image: none;
-    }
-    .bgvideos{
-      background-image: none;
-    }
+  .padded2 {
+    padding: 0.5rem;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobileShow {
+    display: inline;
+  }
+
+  .half-color {
+    margin-right: 0%;
+  }
+
+  .bgwebsites {
+    background-image: none;
+  }
+
+  .bgphotos {
+    background-image: none;
+  }
+
+  .bgvideos {
+    background-image: none;
+  }
 }
-
-
-
 
 /* image bigger on click */
 /* The grid: Four equal columns that floats next to each other */
@@ -496,23 +536,23 @@ img {
 }
 
 .parallax-background-container {
-    height: 65vh;
-    position: relative;
-    overflow: hidden;
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: 18% 45%;
-    background-repeat: no-repeat;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: 18% 45%;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.white{
+.white {
   font-size: 10rem;
 }
 
@@ -553,117 +593,111 @@ img {
 }
 
 /*lightbox (pop ups) */
-
 /* Styles the thumbnail */
-
 a.lightbox img {
-height: 250px;
-border: 3px solid white;
-margin: 20px 20px 20px 20px;
+  height: 250px;
+  border: 3px solid white;
+  margin: 20px 20px 20px 20px;
 }
 
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
 .lightbox-target {
-position: fixed;
-top: -100%;
-width: 100%;
-background: rgba(0,0,0,.7);
-width: 100%;
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
 }
 
 /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
 .lightbox-target img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-max-height: 0%;
-max-width: 0%;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 /* Styles the close link, adds the slide down transition */
-
 a.lightbox-close {
-display: block;
-width:50px;
-height:50px;
-box-sizing: border-box;
-background: white;
-color: black;
-text-decoration: none;
-position: absolute;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
 .lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
 }
 
 .lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .lightbox-target:target a.lightbox-close {
-top: 0px;
+  top: 0px;
 }
+
+/* hover */
