@@ -107,8 +107,8 @@ body {
 
 .half-color-vertical {
   background: linear-gradient(to bottom,
-      #F7F7F7 80%,
-      #F7F7F7 0%,
+      #FFF 80%,
+      #FFF 0%,
       #a9bdba 0%,
       #a9bdba 100%);
 }
