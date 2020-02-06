@@ -153,13 +153,13 @@ body {
 
 /* header & footer */
 header {
-  padding: 1% 5%;
+  padding: 1% 4%;
 }
 
 header a {
   text-decoration: none;
   color: inherit;
-  padding: 0.5rem;
+  padding: 0.3rem;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: lighter;
@@ -201,6 +201,38 @@ footer .fab {
 
 footer p {
   font-size: 1.5rem;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #F7F7F7;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: lighter;
+  word-spacing: 15px;
+  letter-spacing: 4px;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: #CFCFCD;
+  text-decoration: none;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 /* overlaying images */
@@ -541,7 +573,7 @@ img {
 }
 
 .parallax-background-container {
-  height: 65vh;
+
   position: relative;
   overflow: hidden;
 }
@@ -704,5 +736,3 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
   top: 0px;
 }
-
-/* hover */
