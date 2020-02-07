@@ -498,14 +498,22 @@ img {
 
   .bgwebsites {
     background-image: none;
+    margin-right: 1%;
   }
 
   .bgphotos {
     background-image: none;
+    margin-right: 1%;
   }
 
   .bgvideos {
     background-image: none;
+    margin-right: 1%;
+  }
+  .half-color {
+    background-color: #FFF;
+    margin-right: 0%;
+    padding: 2% 5%;
   }
 }
 
