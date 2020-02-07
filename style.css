@@ -47,6 +47,10 @@ body {
   text-align: center;
 }
 
+.light{
+  font-weight: 300;
+}
+
 .padded {
   padding: 5%;
 }
