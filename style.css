@@ -154,9 +154,11 @@ body {
   margin-right: 10%;
 }
 
+
+
 /* header & footer */
 header {
-  padding: 1% 4%;
+  padding: 0.7% 4%;
 }
 
 header a {
@@ -164,14 +166,10 @@ header a {
   color: inherit;
   padding: 0.3rem;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: lighter;
   word-spacing: 15px;
   letter-spacing: 4px;
-}
-
-header nav {
-    word-spacing: 30px;
 }
 
 header a:hover {
@@ -184,6 +182,10 @@ header h1 {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 3px;
+}
+
+footer{
+    padding: 0.7% 4%;
 }
 
 footer a {
@@ -208,11 +210,8 @@ footer p {
 
 /* The navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #F7F7F7;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  text-align: justify;
+  word-spacing: 30px;
 }
 
 /* Links inside the navbar */
@@ -456,7 +455,7 @@ img {
   }
 
   header a {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   header h1 {
@@ -466,6 +465,10 @@ img {
   footer {
     min-height: 3vh;
     font-size: 5rem;
+  }
+
+  .navbar {
+    font-size: 2rem;
   }
 
   .right {
@@ -514,6 +517,9 @@ img {
     background-color: #FFF;
     margin-right: 0%;
     padding: 2% 5%;
+  }
+  hr {
+    display: none;
   }
 }
 
@@ -747,4 +753,37 @@ a.lightbox-close:after {
 
 .lightbox-target:target a.lightbox-close {
   top: 0px;
+}
+
+/*  line under navigation */
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+  text-align: right;
+}
+
+
+.two:hover ~ hr {
+  margin-left: 25%;
+}
+
+.three:hover ~ hr {
+  margin-left: 53%;
+}
+
+.four:hover ~ hr {
+  margin-left: 78%;
+}
+
+hr {
+  height: .2rem;
+  width: 15%;
+  margin: 0;
+  background: #CFCFCD;
+  border: none;
+  transition: .3s ease-in-out;
 }
